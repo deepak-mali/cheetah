@@ -1,5 +1,2 @@
-import { logger } from './logger/logger';
-
-export {
-  logger
-};
+export * from './logger';
+export * from './puppeteer';

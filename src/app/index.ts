@@ -1,5 +1,5 @@
-import { add } from './add';
+import { articleScraper } from './articleScraper';
 
 export {
-	add,
+	articleScraper
 };

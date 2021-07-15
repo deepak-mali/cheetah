@@ -1,14 +1,15 @@
-import { describe, it } from 'mocha';
 import { expect } from 'chai';
-import { add } from '../app';
+import { describe, it } from 'mocha';
 
-// Test cases for addition logic.
-describe('Testing Add functionality...', () => {
-  it('Testing with number array', () => {
-    expect(add([2, 2])).to.equal(4);
-  });
+import { articleScraper } from '../app';
 
-  it('Testing with floating and integer number array...', () => {
-    expect(add([0.2, 2])).to.equal(2.2);
-  });
-})
+// // Test cases for addition logic.
+// describe('Testing Add functionality...', () => {
+//   it('Testing with number array', () => {
+//     expect(add([2, 2])).to.equal(4);
+//   });
+
+//   it('Testing with floating and integer number array...', () => {
+//     expect(add([0.2, 2])).to.equal(2.2);
+//   });
+// })

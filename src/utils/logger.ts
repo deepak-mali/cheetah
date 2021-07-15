@@ -1,6 +1,6 @@
-import { createLogger, format, transports } from 'winston';
 import chalk from 'chalk';
 import moment from 'moment';
+import { createLogger, format, transports } from 'winston';
 
 // Create logger instance.
 export const logger = createLogger({
@@ -27,7 +27,7 @@ export const logger = createLogger({
  */
 const colorMessage = (level: string, message: string): string => {
   if(level === 'INFO') {
-    message = chalk.blue(message);
+    message = chalk.green(message);
   } else if(level === 'WARN') {
     message = chalk.yellow(message);
   } else if(level === 'ERROR') {
@@ -37,4 +37,4 @@ const colorMessage = (level: string, message: string): string => {
   }
 
   return message;
-}
+};
